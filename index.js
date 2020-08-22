@@ -24,18 +24,12 @@ app.get("/", (req,res)=>{
     })
 })
 
-
-
-
 const Product = require("./router/product");
 app.use("/", Product)
 
-
-
-app.listen(port, serv, function (erro) {
+app.listen(port, serv, (erro) => {
     if (erro) {
         console.log("Erro ao Iniciar Servidor");
-
     } else {
         console.log("Servidor Inciado com Sucesso");
     }
