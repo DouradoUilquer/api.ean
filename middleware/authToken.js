@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 function auth(req, res, next) {
 
-    const jwtsecret = "GZa2f95C*zA@P#ca4U%XjBrW9zrDoPhpOCScb6CQ"
+    const jwtsecret = "GZa2f95C"
     const authToken = req.headers['authorization'];
 
     if (authToken != undefined) {
