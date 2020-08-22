@@ -9,13 +9,11 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-
-
 const port = "9000";
 const serv = "localhost";
 
 app.get("/", (req,res)=>{
-    const jwtsecret = "GZa2f95C*zA@P#ca4U%XjBrW9zrDoPhpOCScb6CQ"
+    const jwtsecret = "GZa2f95C*"
     jwt.sign({ "" : "" }, jwtsecret, { expiresIn: '2h' }, (err, token) => {
         if (err) {
             res.sendStatus(400)
